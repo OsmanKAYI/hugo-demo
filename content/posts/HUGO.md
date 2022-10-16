@@ -34,7 +34,7 @@ categories: ["tech"]
 - Open the project
   - `code .` opens your recent folder in VSCode.
 
-- Go to 'config.yml' file
+- Go to `config.yml` file
   - Place the theme in your project
     ```
     baseURL: http://example.org/
@@ -74,4 +74,21 @@ categories: ["tech"]
 - `hugo` command lets you to build your site. It is going to create 'public' folder with all of your html, css, image, assets, and etc.
 - This public folder is deleted and the following steps are done:
   - `git init` allows you to create a github repository in your folder.
-  - `touch .gitmodules` allows you to create '.gitmodules' file in the same folder because it is needed to add "themes/'chosenThemeName'" as a submodule which will make it easier to update once we have all of these files in github.
+  - `touch .gitmodules` allows you to create '.gitmodules' file in the same folder because it is needed to add `themes/'chosenThemeName'` as a submodule which will make it easier to update once we have all of these files in github.
+  - Edit the content of `.gitmodules` file as follows
+    ```
+    [submodule "themes/"chosenThemeName"]
+    path = themes/"chosenThemeName"
+    url = "https://github.com/adityatelange/hugo-PaperMod.git"
+    ```
+  - Commit and publish your project on github.
+  - Then go to the `netlify.com` and connect with your github account.
+  - Click `New site from Git` and choose `GitHub`.
+  - Then choose the repository you want to build your site on it.
+  - Set a `Build command` according to your project name (as preferred) and `Publish directory` as `public` in `Basic build settings`.
+  - Set `New variable` as follows:
+    - `Key` --> HUGO_VERSION
+    - `Value` --> the result of `hugo version` command on your computer (**Ex:**`0.104.3`).
+  - Click on `Deploy site`.
+  - After deploying process is done, copy your website link and past into the `baseURL` part in the `config.yml` file (**Ex:**`baseURL: "https://osmankayi.netlify.app"`).
+  - After every change, the files must be submitted to the github and netlify will be doing rest of the work by itself to see the newest version of the project.

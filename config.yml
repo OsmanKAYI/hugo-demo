@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://osmankayi.netlify.app"
 languageCode: en-us
 title: Demo for Hugo
 theme: PaperMod
