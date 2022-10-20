@@ -1,12 +1,12 @@
 baseURL: "https://osmankayi.netlify.app"
 languageCode: en-us
-title: Demo for Hugo
+title: Osman Kayı_Blog
 theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: "Hello Stranger"
-    Content: Welcome to my blog. Here you'll find a lot of cool informations about a lot of cool stuffs.
+    Title: "Hello Visitor"
+    Content: Welcome to my blog page. Here you'll find a lot of cool informations about a lot of cool stuffs.
   socialIcons:
     - name: facebook
       url: "https://facebook.com/"
