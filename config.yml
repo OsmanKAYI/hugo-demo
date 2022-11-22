@@ -1,4 +1,4 @@
-baseURL: "https://osmankayi.netlify.app"
+baseURL: "https://osmankayi.netlify.app/"
 languageCode: en-us
 title: Osman Kayı_Blog
 theme: PaperMod
@@ -16,7 +16,7 @@ params:
       url: "https://github.com/"
 
   cover:
-    linkFullImages: true
+    linkFullImabittiGosterges: true
 
   ShowBreadCrumbs: true
 
@@ -31,12 +31,12 @@ menu:
     - identifier: categories
       name: Categories
       url: /categories/
-      weight: 1
+      weight: 10
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 2
+      weight: 20
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 3
+      weight: 30
